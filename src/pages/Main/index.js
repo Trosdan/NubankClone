@@ -17,7 +17,7 @@ import {
   CardFooter,
   Annotation,
   Title,
-  Description,
+  Description
 } from './styles';
 
 export default function Main() {
@@ -28,11 +28,11 @@ export default function Main() {
     [
       {
         nativeEvent: {
-          translationY: translateY,
-        },
-      },
+          translationY: translateY
+        }
+      }
     ],
-    { useNativeDriver: true },
+    { useNativeDriver: true }
   );
 
   function onHandlerStageChanged(event) {
@@ -52,7 +52,7 @@ export default function Main() {
       Animated.timing(translateY, {
         toValue: opened ? 380 : 0,
         duration: 200,
-        useNativeDriver: true,
+        useNativeDriver: true
       }).start(() => {
         offset = opened ? 380 : 0;
         translateY.setOffset(offset);
@@ -78,10 +78,10 @@ export default function Main() {
                   translateY: translateY.interpolate({
                     inputRange: [-350, 0, 380],
                     outputRange: [-50, 0, 380],
-                    extrapolate: 'clamp',
-                  }),
-                },
-              ],
+                    extrapolate: 'clamp'
+                  })
+                }
+              ]
             }}
           >
             <CardHeader>
@@ -93,7 +93,9 @@ export default function Main() {
               <Description>R$ 197.611,65</Description>
             </CardContent>
             <CardFooter>
-              <Annotation>Tranferência de R$ 2.000,00 recebida em 01 JUN</Annotation>
+              <Annotation>
+                Tranferência de R$ 2.000,00 recebida em 01 JUN
+              </Annotation>
             </CardFooter>
           </Card>
         </PanGestureHandler>

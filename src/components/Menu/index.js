@@ -11,7 +11,7 @@ import {
   NavItems,
   NavText,
   SignOutbutton,
-  SignOutbuttonText,
+  SignOutbuttonText
 } from './styles';
 
 export default function Menu({ translateY }) {
@@ -20,12 +20,17 @@ export default function Menu({ translateY }) {
       style={{
         opacity: translateY.interpolate({
           inputRange: [0, 150],
-          outputRange: [0, 1],
-        }),
+          outputRange: [0, 1]
+        })
       }}
     >
       <Code>
-        <QRCode value="https://www.google.com.br/" size={80} bgColor="#8B10AE" fgColor="#FFF" />
+        <QRCode
+          value="https://www.google.com.br/"
+          size={80}
+          bgColor="#8B10AE"
+          fgColor="#FFF"
+        />
       </Code>
 
       <Nav>
