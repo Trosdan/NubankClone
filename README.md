@@ -10,7 +10,7 @@ Project in React Native that is a interface replika of NuBank
 
 Clone repository
 
-> git clone https://github.com/Trosdan/GoEcommerce.git
+> git clone https://github.com/Trosdan/NubankClone.git
 
 Download dependencies with yarn
 
